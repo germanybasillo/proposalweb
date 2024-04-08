@@ -35,6 +35,7 @@ body {
   padding: 20px;
   text-align: center; /* Center align content */
   width: 100%; /* Ensure the content takes up 100% width */
+  margin-top: 700px;
 }
 
 .container .content h1 {
@@ -59,8 +60,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
   .container .content {
     padding: 15px;
+    width: 100%;
   }
   
   .container .content h1 {
@@ -76,6 +84,7 @@ body {
   }
 }
 
+
 </style>
 </head>
 <body>
@@ -90,6 +99,7 @@ body {
       <a href="top5.html">Top 5</a>
       <h2>Nami</h2>
       <p>Also a member of the Straw Hat Pirates and the navigator. While not physically strong like many others on this list, she possesses exceptional navigational skills and is capable of using the Clima-Tact to control weather.</p>
+      <footer><b>Webproposal All rights reserve</b></footer>
     </div>
   </div>
 
