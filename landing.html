@@ -32,10 +32,16 @@ body {
 .container .content {
   background-color: rgba(0, 0, 0, 0.7);
   color: #ffffff;
-  padding: 20px;
+ 
   text-align: center; /* Center align content */
   width: 100%; /* Ensure the content takes up 100% width */
+  padding: 20px;
+  /* Default margin-top for larger screens */
+  margin-top: 690px;
 }
+
+
+
 
 .container .content h1 {
   font-size: 2em;
@@ -60,8 +66,9 @@ body {
 
 @media (max-width: 768px) {
   .container .content {
-    padding: 15px;
+    padding: -50px;
   }
+
   
   .container .content h1 {
     font-size: 1.5em;
@@ -81,8 +88,8 @@ body {
 <body>
 
   <div class="container">
-    <div class="content">
-      <h1>Welcome to my Landing Page</h1>
+    <div class="content" style="margin-top: 695px;">
+      <h1>Welcome to my Webpage Proposal</h1>
       <a href="login.html">Login</a>
       <a href="register.html">Register</a>
       <a href="top1.html">Top 1</a>
