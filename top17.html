@@ -35,6 +35,7 @@ body {
   padding: 20px;
   text-align: center; /* Center align content */
   width: 100%; /* Ensure the content takes up 100% width */
+  margin-top: 700px;
 }
 
 .container .content h1 {
@@ -59,8 +60,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
   .container .content {
     padding: 15px;
+    width: 100%;
   }
   
   .container .content h1 {
@@ -76,6 +84,7 @@ body {
   }
 }
 
+
 </style>
 </head>
 <body>
@@ -89,6 +98,7 @@ body {
       <a href="top16.html">Top 16</a>
       <h2>Koala</h2>
       <p>A former slave and a member of the Revolutionary Army. She is highly skilled in fish-man karate.</p>
+      <footer><b>Webproposal All rights reserve</b></footer>
     </div>
   </div>
 

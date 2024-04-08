@@ -35,6 +35,7 @@ body {
   padding: 20px;
   text-align: center; /* Center align content */
   width: 100%; /* Ensure the content takes up 100% width */
+  margin-top: 700px;
 }
 
 .container .content h1 {
@@ -59,8 +60,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
   .container .content {
     padding: 15px;
+    width: 100%;
   }
   
   .container .content h1 {
@@ -76,6 +84,7 @@ body {
   }
 }
 
+
 </style>
 </head>
 <body>
@@ -90,6 +99,7 @@ body {
       <a href="top9.html">Top 9</a>
       <h2>Shirahoshi</h2>
       <p>The mermaid princess of the Ryugu Kingdom, Shirahoshi has the ability to communicate with Sea Kings due to her ancient weapon lineage.</p>
+      <footer><b>Webproposal All rights reserve</b></footer>
     </div>
   </div>
 
