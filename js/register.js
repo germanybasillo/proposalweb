@@ -1,6 +1,6 @@
-let sign_up = document.getElementById("register");
-if(sign_up != undefined){
-    sign_up.addEventListener("submit", e => {
+let register = document.getElementById("register");
+if(register != undefined){
+    register.addEventListener("submit", e => {
         e.preventDefault();
         let username = document.getElementById("username").value;
         let email = document.getElementById("email").value;
@@ -57,7 +57,7 @@ if(sign_up != undefined){
                                     ];
                                     localStorage.setItem("users", JSON.stringify(users));
                                 }
-                                sessionStorage.setItem("c_user_email", email);
+                                sessionStorage.setItem("c_user_username", username);
                                 location.href = "../page/home.html";
                             }
                         }
