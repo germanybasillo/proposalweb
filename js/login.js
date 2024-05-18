@@ -32,7 +32,6 @@ if(login != undefined){
                             password_err.innerText = "Password is invalid!";
                         }else{
                             sessionStorage.setItem("c_user_username", email_res.username);
-                            alert("Thank you for logging in!");
                             location.href = "../page/home.html";
                         }
                     }
