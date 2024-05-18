@@ -3,133 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/account.css">
 <title>Responsive Landing Page</title>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5; /* Set a light background color */
-}
-
-.container {
-  position: relative;
-  max-width: 100%;
-  height: 100%; /* Full viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('images/logo.avif');
-  background-size: cover;
-  background-position: center;
-}
-
-.container .content {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffff;
-  padding: 20px;
-  text-align: center; /* Center align content */
-  width: 100%; /* Ensure the content takes up 100% width */
-  margin-top: 499px;
-}
-
-.container .content h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.container .content a {
-  text-decoration: none;
-  color: #ffffff;
-  margin: 0 10px; /* Add spacing around links */
-}
-
-.container .content h2 {
-  font-size: 1.5em;
-  margin-top: 20px;
-}
-
-.container .content p {
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input[type="text"],
-input[type="password"] {
-  padding: 1px;
-  margin-left:45%;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: 10%;
-}
-
-button {
-  padding: 1px;
-  margin-left:45%;
-  width: 10%;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover{
-  background-color: #0056b3;
-}
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .container .content {
-    padding: 15px;
-    width: 100%;
-  }
-  
-  .container .content h1 {
-    font-size: 1.5em;
-  }
-  
-  .container .content h2 {
-    font-size: 1.2em;
-  }
-  
-  .container .content p {
-    font-size: 0.9em;
-  }
-
-  input[type="text"],
-input[type="password"], button{
-    width: 34%;
-    margin-left: 151px;
-  }
-}
-
-</style>
 </head>
 <body>
 
-<div class="container">
-  <div class="content">
+  <div class="container" style="background-image:url('images/logo.avif');">
+  <div class="content" style="margin-top: 499px;">
     <h1>Create Account</h1>
     <h2><a href="landing.html"><b style="color:violet">T</b><b style="color:yellow">R</b><b>Warriors</b><b style="color:greenyellow">G</b></a></h2>
     <h3>Register</h3>
     <form action="login.html" method="post">
       <input type="text" id="username" name="username" placeholder="Username" required>
-      <input type="text" id="email" name="email" placeholder="Email" required>
+      <input type="email" id="email" name="email" placeholder="Email" required>
       <input type="password" id="password" name="password" placeholder="Password" required>
       <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm_Password" required>
       <button type="submit">Register</button>
