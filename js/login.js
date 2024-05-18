@@ -1,4 +1,3 @@
-
 let login = document.getElementById("login");
 if(login != undefined){
     login.addEventListener("submit", e => {
@@ -32,7 +31,8 @@ if(login != undefined){
                         if(password_res != password){
                             password_err.innerText = "Password is invalid!";
                         }else{
-                            sessionStorage.setItem("c_user_username", username);
+                            sessionStorage.setItem("c_user_username", email_res.username);
+                            alert("Thank you for logging in!");
                             location.href = "../page/home.html";
                         }
                     }

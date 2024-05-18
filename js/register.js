@@ -58,6 +58,7 @@ if(register != undefined){
                                     localStorage.setItem("users", JSON.stringify(users));
                                 }
                                 sessionStorage.setItem("c_user_username", username);
+                                alert("Thank you for register,click okay to continue!");
                                 location.href = "../page/home.html";
                             }
                         }
